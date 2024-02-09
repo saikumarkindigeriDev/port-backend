@@ -35,7 +35,7 @@ app.post("/client",(req,res)=>{
     const values=[name,email,phone,message]
 
     
-    pool.query(`INSERT INTO clients (name,email,phone,message) values(?,?,?,?)`,values,(err,data)=>{
+    pool.query(`INSERT INTO customers (name,email,phone,message) values(?,?,?,?)`,values,(err,data)=>{
         if (err){
             return res.json("Form failed to Submit!")
             console.log(err)
