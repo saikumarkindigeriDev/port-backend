@@ -1,5 +1,9 @@
 const express = require("express")
-const app = express()
+const cors = require('cors');
+const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 
 require('dotenv').config()
 
