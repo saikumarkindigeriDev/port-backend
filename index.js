@@ -45,7 +45,7 @@ app.post("/client",(req,res)=>{
             console.log(err)
         }
         console.log("Form Submitted Successfully.")
-        return res.json("Form Submitted Successfully.")
+        return res.json("Thank You for getting in Touch.")
     })
 
 })
